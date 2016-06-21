@@ -35,6 +35,13 @@ var sampleData = [
   {year: 2016, population: 500806, spend: 10001482, city: "OKC", state: "OK"}
 ]
 
+var spends = []
+sampleData.forEach(function(obj){spends[spends.length] = obj.spend})
+console.log(spends)
+var sum = 0
+spends.forEach(function(s){sum += s})
+console.log(sum)
+
 // try and "loop" through this array, and add one of the fields (the spend
 // field), to a new array, i.e
 // this
