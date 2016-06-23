@@ -9,14 +9,14 @@
 // 1.
 // Create an object with a `name` property whose value is 'Michael'
 
-var obj1 = { }
+var obj1 = {name:'Michael'}
 
 
 // 2.
 // Create an object with a `name` property whose value is 'James'
 // and and `age` property with the value 48
 
-var obj2 = { }
+var obj2 = {name:'James',age:48}
 
 
 // 3.
@@ -25,7 +25,7 @@ var obj2 = { }
 // to define the object slightly differently.
 // See lecture notes for help
 
-var obj3 = { }
+var obj3 = {"happy-days":true}
 
 
 // 4.
@@ -34,7 +34,7 @@ var obj3 = { }
 var obj4 = {
   name: 'Carissa',
   age: 23,
-  music: 'Country'
+  music: 'Techno'
 }
 
 
@@ -43,7 +43,7 @@ var obj4 = {
 // The name object should have `first` and `last` properties whose
 // values are 'Ada' and 'Lovelace' respectively.
 
-var obj5 = { }
+var obj5 = {name:{first:'Ada',last:'Lovelace'}}
 
 
 // 6.
@@ -55,7 +55,7 @@ var obj5 = { }
 // values are 'Creative Director' and 'NeXT' respectively.
 // Watch the capitalization and syntax!
 
-var obj6 = { }
+var obj6 = {name:{first:'Susan',last:'Kare'},job:{title:'Creative Director',company:'NeXT'}}
 
 
 // 7.
@@ -64,11 +64,11 @@ var obj6 = { }
 
 // Remember that you can declare a function and assign it to a variable like:
 
-var func = function() {
-  // do something
-}
+// var func = function() {
+  // // do something
+// }
 
-var obj7 = { }
+var obj7 = {meaningOfLife:function(){return 42}}
 
 
 // 8.
@@ -78,7 +78,8 @@ var obj7 = { }
 // e.g. successMsg = 'Completed' or failureMsg = 'Incomplete'
 // Don't redeclare the variables!
 
-var obj8 = { }
+var obj8 = {completed:function(){successMsg='Completed'},
+			failed:function(){failureMsg='Failed'}}
 
 // do not modify the following code for problem 8, but examine it
 // in order to under how it works. make sure you understand the control flow
@@ -108,7 +109,7 @@ fail(obj8)
 // Create an object with single function `quadruple` which takes a single numeric
 // paramater and returns its value multipled by 4
 
-var obj9 = { }
+var obj9 = {quadruple:function(x){return x * 4}}
 
 
 

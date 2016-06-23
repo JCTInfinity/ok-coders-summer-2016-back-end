@@ -9,7 +9,7 @@
 // Create an array with the following values in it in this order:
 // 1, 1, 2, 3, 5, 8, 13, 21
 
-var array1 = [ ]
+var array1 = [1, 1, 2, 3, 5, 8, 13, 21]
 
 
 // 2.
@@ -19,20 +19,20 @@ var array1 = [ ]
 // "Avery"
 // "David"
 
-var array2 = [ ]
+var array2 = ["Zach", "Mary", "Avery", "David"]
 
 
 // 3.
 // Update the following array so that the third item has a value of 100
 
-var array3 = [1, 2, 3, 4, 5, 6, 7]
+var array3 = [1, 2, 100, 4, 5, 6, 7]
 
 
 // 4.
 // Create two dimenional array with three nested arrays each with three items
 // Fill the arrays with the numbers 1 through 9, so 3 numbers in each nested array
 
-var array4 = [ ]
+var array4 = [[1,2,3],[4,5,6],[7,8,9]]
 
 
 // 5.
@@ -40,7 +40,7 @@ var array4 = [ ]
 // with a `name` property set to "Luke", an `age` property set to 56, and a `sex`
 // property set to 'M'
 
-var array5 = [ ]
+var array5 = [{name:"Luke",age:56,sex:"M"}]
 
 
 // 6.
@@ -48,7 +48,7 @@ var array5 = [ ]
 // assigns the result to the `total` variable.
 
 var array6 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-var total = 0
+var total = array6.reduce(function(x,y){return x+y;})
 
 
 // 7.
@@ -56,7 +56,7 @@ var total = 0
 // Store the result in array7
 
 var csv = 'Zach,Mays,26,Male,Oklahoma City,OK,Developer'
-var array7 = [ ]
+var array7 = csv.split(",")
 
 
 
