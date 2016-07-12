@@ -88,7 +88,7 @@ Finally add error checking immediately after grabbing the connection:
 
 These two handlers add callbacks for the database events `error` and `open`. Any time mongoose encounters an error with the database its raises an `error` event and our callback will log the error. We'll also see a confirmation that the database connection was successful when the applicaiton first starts up.
 
-Let's confirm that. If you're node application is already running Ctr-C to quit it and start it up again:
+Let's confirm that. If your node application is already running Ctr-C to quit it and start it up again:
 
 	$ npm start
 
