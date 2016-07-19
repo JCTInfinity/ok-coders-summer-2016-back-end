@@ -88,7 +88,7 @@ Finally add error checking immediately after grabbing the connection:
 
 These two handlers add callbacks for the database events `error` and `open`. Any time mongoose encounters an error with the database its raises an `error` event and our callback will log the error. We'll also see a confirmation that the database connection was successful when the applicaiton first starts up.
 
-Let's confirm that. If your node application is already running Ctr-C to quit it and start it up again:
+Let's confirm that. If you're node application is already running Ctr-C to quit it and start it up again:
 
 	$ npm start
 
@@ -111,7 +111,7 @@ The schema does this. The schema makes it possible for the mongoose library to m
 Let's define a schema for our a emails object. Make a  *models/emails.js* file and define the following schema:
 
 	var mongoose = require('mongoose')
-        var Schema = mongoose.Schema
+        var Schema = mongoose.Schema // return constructor function
 
 	var schema = new Schema({
           _id: Schema.Types.ObjectId
