@@ -1,12 +1,12 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var schema = new Schema({
-	accountNumber: { type : String , unique : true, required : true, dropDups: true }
-	TaxableMarket2016: String
-	PhysicalAddress: String
-	Type: String
-	Owner Name1: String
-	Owner Name2: String
+	accountNumber: { type : String , unique : true, required : true, dropDups: true },
+	//TaxableMarket2016: String,
+	//PhysicalAddress: String,
+	//Type: String,
+	//"Owner Name1": String,
+	//"Owner Name2": String
 	// accountLink: [String],
 	
 	
