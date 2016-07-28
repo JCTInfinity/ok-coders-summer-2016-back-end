@@ -12,6 +12,7 @@
   "dependencies": {
     "cheerio": "^0.20.0",
     "lodash": "^4.13.1",
+    "mongoose": "^4.5.7",
     "request": "^2.73.0"
   }
 }
